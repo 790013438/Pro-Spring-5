@@ -1,4 +1,4 @@
-package io.github.floyd.spring.helloword;
+package io.github.floyd.spring.helloworld;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
