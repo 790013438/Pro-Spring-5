@@ -22,7 +22,7 @@ public class MessageSupportFactory {
             properties.load(this.getClass().getResourceAsStream("/msf.properties"));
 
             String renderClass = properties.getProperty("renderer.class");
-            String providerClass = properties.getProperty("providerer.class");
+            String providerClass = properties.getProperty("provider.class");
 
             messageRender = (MessageRenderer) Class.forName(renderClass).newInstance();
             messageProvider = (MessageProvider) Class.forName(providerClass).newInstance();
