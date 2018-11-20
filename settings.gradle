@@ -2,6 +2,8 @@ rootProject.name = 'pro-spring-5'
 
 include 'started:hello-world'
 
+include 'di:dependency-pull'
+
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
         '"Spring Pro, Fifth Edition" ' +
         ' published by Apress in order to learn and practice with all Spring Web libraries. ')
