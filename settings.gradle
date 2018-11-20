@@ -3,6 +3,7 @@ rootProject.name = 'pro-spring-5'
 include 'started:hello-world'
 
 include 'di:dependency-pull'
+include 'di:cdl'
 
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
         '"Spring Pro, Fifth Edition" ' +
