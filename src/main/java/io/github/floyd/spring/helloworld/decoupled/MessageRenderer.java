@@ -3,7 +3,7 @@ package io.github.floyd.spring.helloworld.decoupled;
 /**
  * @author floyd
  */
-interface MessageRenderer {
+public interface MessageRenderer {
 
     /**
      * 输出信息
@@ -12,9 +12,9 @@ interface MessageRenderer {
 
     /**
      * 设置信息来源
-     * @param provider 来源提供者，从一个类（对象）那里得到信息
+     * @param messageProvider 来源提供者，从一个类（对象）那里得到信息
      */
-    void setMessageProvider(MessageProvider provider);
+    void setMessageProvider(MessageProvider messageProvider);
 
     /**
      * 返回是谁（类，对象）提供的信息
