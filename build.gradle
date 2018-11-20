@@ -3,7 +3,7 @@ ext {
     springVersion = '5.0.4.RELEASE'
 
     // logging libs
-    slf4jVersion = '1.7.25'
+    slf4jVersion = '1.7.2'
     logbackVersion = '1.2.3'
 
     lombokVersion = '1.16.18'
@@ -20,7 +20,7 @@ ext {
     ]
 
     misc = [
-            slf4jJcl: "org.slf4j:jcl-over-slf4j:$slf4jVersion",
+            slf4jJcl: "org.slf4j:slf4j-log4j12:$slf4jVersion",
             lombok  : "org.projectlombok:lombok:$lombokVersion"
     ]
 }
