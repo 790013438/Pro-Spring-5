@@ -49,8 +49,5 @@ public class HelloWorldDecoupled {
         NotInitException(String name) {
             super(name);
         }
-        NotInitException() {
-            super();
-        }
     }
 }

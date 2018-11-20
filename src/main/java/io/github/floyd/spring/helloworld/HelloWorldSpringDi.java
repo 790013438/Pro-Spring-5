@@ -4,6 +4,9 @@ import io.github.floyd.spring.helloworld.decoupled.MessageRenderer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * @author floyd
+ */
 public class HelloWorldSpringDi {
 
     public static void main(String...args) {
