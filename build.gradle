@@ -16,7 +16,7 @@ ext {
     ]
 
     testing = [
-            junit: 'junit:junit:$junitVersion'
+            junit: "junit:junit:$junitVersion"
     ]
 
     misc = [
