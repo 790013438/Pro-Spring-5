@@ -1,0 +1,16 @@
+subprojects {
+    group 'io.github.floyd.helloworld'
+    apply plugin: 'java'
+
+    /* Task that copies all the dependencies under build/libs */
+    task copyDependencies(type: Copy) {
+        from configurations.compile
+        into 'build/libs'
+    }
+
+    dependencies {
+        compile spring.context, misc.slf4jJcl
+        compileOnly misc.lombok
+        testCompile testing.junit
+    }
+}

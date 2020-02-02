@@ -1,0 +1,16 @@
+dependencies {
+    compile     project(':started:hello-world')
+    compile     spring.context, misc.slf4jJcl
+    testCompile testing.junit
+}
+
+jar {
+    manifest {
+        attributes(
+                "Created-By"          : System.getProperty('java.version'),
+                "Specification-Title" : "Pro Spring 5",
+                "Main-Class"          : 'io.github.floyd.spring.di.DependencyPull',
+                "Class-Path"          : configurations.compile.collect { it.getName() }.join(' ')
+        )
+    }
+}

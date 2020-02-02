@@ -1,0 +1,21 @@
+rootProject.name = 'pro-spring-5'
+
+include 'started:hello-world'
+
+include 'di:dependency-pull'
+include 'di:cdl'
+include 'di:constructor-injection'
+include 'di:setter-injection'
+
+println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
+        '"Spring Pro, Fifth Edition" ' +
+        ' published by Apress in order to learn and practice with all Spring Web libraries. ')
+
+//we check if the modules have gradle configuration files
+rootProject.children.each { project ->
+    project.buildFileName = "${project.name}.gradle"
+    assert project.projectDir.isDirectory()
+    assert project.buildFile.exists()
+    assert project.buildFile.isFile()
+}
+
