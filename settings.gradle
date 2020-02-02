@@ -5,6 +5,7 @@ include 'started:hello-world'
 include 'di:dependency-pull'
 include 'di:cdl'
 include 'di:constructor-injection'
+include 'di:setter-injection'
 
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
         '"Spring Pro, Fifth Edition" ' +
