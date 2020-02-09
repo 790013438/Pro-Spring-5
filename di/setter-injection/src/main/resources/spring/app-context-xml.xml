@@ -10,3 +10,4 @@
         p:messageProvider-ref="provider"/>
 
     <bean id="provider" class="io.github.floyd.spring.helloworld.decoupled.HelloWorldMessageProvider"/>
+</beans>
