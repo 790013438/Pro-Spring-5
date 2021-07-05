@@ -14,10 +14,13 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 public class DeclareSpringComponents {
     public static void main(String[] args) {
         GenericXmlApplicationContext genericXmlApplicationContext = new GenericXmlApplicationContext();
-        genericXmlApplicationContext.load("classpath:spring/app-context-xml.xml");
+        genericXmlApplicationContext.load("classpath:spring/app-context-annotation.xml");
         genericXmlApplicationContext.refresh();
         MessageRenderer messageRenderer = genericXmlApplicationContext.getBean("renderer", MessageRenderer.class);
         messageRenderer.render();
+        MessageRenderer messageRenderer2 = genericXmlApplicationContext.getBean("renderer", MessageRenderer.class);
+        messageRenderer2.render();
         genericXmlApplicationContext.close();
+        System.out.println(messageRenderer == messageRenderer2);
     }
 }

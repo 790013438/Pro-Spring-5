@@ -1,5 +1,5 @@
 package io.github.floyd.di;
 
-interface Oracle {
+public interface Oracle {
     String defineMeaningOfLife();
 }
